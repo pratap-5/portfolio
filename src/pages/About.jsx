@@ -10,8 +10,8 @@ function About() {
       <div className="  w-full  h-[700px] p-2 flex  flex-col  md:flex-row  justify-center items-center gap-1 overflow-hidden">
         <div className=" md:basis-[30%] basis-full flex items-center justify-center  shadow-2xl w-full h-full rounded-lg  overflow-hidden   ">
           <img
-            className="md:w-full  h-full  shadow-lg rounded-lg "
-            src="/images/aboutImage.jpeg"
+            className="md:w-full  h-full w-auto  md:h-auto  shadow-lg rounded-lg "
+            src="/images/aboutImage.jpg"
             alt=""
           />
         </div>
