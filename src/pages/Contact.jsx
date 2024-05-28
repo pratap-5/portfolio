@@ -9,7 +9,7 @@ import { BsInstagram } from "react-icons/bs";
 function Contact() {
   return (
     <div className={`w-full  h-full    `}>
-      <div className="w-full h-[900px] md:h-[700px]  flex  flex-col md:flex-row justify-center items-center  flex-warp gap-1 p-2 bg-retro ">
+      <div className="w-full h-[800px]  flex  flex-col md:flex-row justify-center items-center  flex-warp gap-1 p-2 bg-retro ">
         <div className="  basis-full md:basis-[30%] w-full h-full p-1  flex justify-center items-center rounded-xl  shadow-xl  bg-gray-400 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-0 ">
           <div className="w-full h-auto  rounded-3xl  p-3  ">
             <h1 className=" text-5xl text-center m-1  capitalize font-semibold ">
@@ -80,7 +80,7 @@ function Contact() {
             />
 
             <textarea
-              className="rounded-lg py-2.5 px-4  bg-transparent outline-none  shadow h-[300px] w-full  border-[#ffffff2c] border border-1 resize-none   bg-gray-400 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-0   "
+              className="rounded-lg py-2.5 px-4  bg-transparent outline-none  shadow h-[250px] md:h-[300px] w-full  border-[#ffffff2c] border border-1 resize-none   bg-gray-400 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-0   "
               placeholder="Enter your description"
             ></textarea>
             <button

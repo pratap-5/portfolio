@@ -14,17 +14,27 @@ function Header() {
       className={`   w-full h-[70px] sm:h-[100px]  shadow-lg sm:bg-gray-400 sm:bg-clip-padding sm:backdrop-filter  sm:backdrop-blur-lg sm:bg-opacity-0 flex  justify-between items-center px-7`}
     >
       <span className="text-3xl uppercase  font-bold tracking-wider flex  flex-col justify-center items-center gap-2">
-        <h1 className="text-4xl  flex justify-center items-center">pratap  <span className="loading loading-ring loading-lg"></span></h1>
-       
+        <h1 className="text-4xl  flex justify-center items-center">
+          pratap <span className="loading loading-ring loading-lg"></span>
+        </h1>
+
         <progress className="progress w-56 "></progress>
       </span>
       <ul
         className={`  z-10 order-1 transition duration-500 sm:flex sm:justify-center sm:items-center gap-5 text-2xl capitalize ${
           menu
-            ? `flex flex-shrink absolute flex-col bg-gray-900  justify-start items-center  left-0 top-0 h-screen w-2/3 pt-6`
+            ? `flex flex-shrink absolute flex-col bg-gray-900  justify-start items-start  right-0 top-0 h-screen w-1/2 pt-6 pl-4`
             : "hidden"
         }`}
       >
+        <span
+          className="sm:hidden  text-4xl"
+          onClick={() => setMenu(false)}
+        >
+          {/*  //for  closing the menu */}
+          <MdCancel />
+        </span>
+
         <li className="hover:text-blue-400  ">
           <Link to="/">Home</Link>
         </li>
@@ -38,9 +48,7 @@ function Header() {
           <Link to="/contact">Contact</Link>
         </li>
 
-
- 
-        <label className="swap swap-rotate">
+        <label className="swap swap-rotate ">
           {/* this hidden checkbox controls the state */}
           <input
             type="checkbox"
@@ -48,7 +56,6 @@ function Header() {
             checked={darkMode}
           />
 
-      
           <svg
             className="swap-on fill-current w-10 h-10"
             xmlns="http://www.w3.org/2000/svg"
@@ -66,14 +73,6 @@ function Header() {
             <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
           </svg>
         </label>
-
-        <span
-          className="text-2xl sm:hidden text-red-700"
-          onClick={() => setMenu(false)}
-        >
-          {/*  //for  closing the menu */}
-          <MdCancel />
-        </span>
       </ul>
       <span className=" sm:hidden text-2xl" onClick={() => setMenu(!menu)}>
         {/*  //for  opening the menu */}
