@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <header
-      className={`  z-20 order-1 w-full h-[70px] sm:h-[100px]  shadow-lg bg-gray-400 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-0 flex  justify-between items-center px-7`}
+      className={`   w-full h-[70px] sm:h-[100px]  shadow-lg sm:bg-gray-400 sm:bg-clip-padding sm:backdrop-filter  sm:backdrop-blur-lg sm:bg-opacity-0 flex  justify-between items-center px-7`}
     >
       <span className="text-3xl uppercase  font-bold tracking-wider flex  flex-col justify-center items-center gap-2">
         <h1 className="text-4xl  flex justify-center items-center">pratap  <span className="loading loading-ring loading-lg"></span></h1>
@@ -19,9 +19,9 @@ function Header() {
         <progress className="progress w-56 "></progress>
       </span>
       <ul
-        className={`  transition duration-500 sm:flex sm:justify-center sm:items-center gap-5 text-2xl capitalize ${
+        className={`  z-10 order-1 transition duration-500 sm:flex sm:justify-center sm:items-center gap-5 text-2xl capitalize ${
           menu
-            ? `flex flex-col absolute items-center z-20 bg-gray-900  justify-start  left-0 top-0 h-screen w-1/2 p-4`
+            ? `flex flex-shrink absolute flex-col bg-gray-900  justify-start items-center  left-0 top-0 h-screen w-2/3 pt-6`
             : "hidden"
         }`}
       >
