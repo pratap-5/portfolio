@@ -63,7 +63,7 @@ function Contact() {
             </a>
           </div>
         </div>
-        <div className=" p-4  basis-full md:basis-[70%] w-full h-full   rounded-xl shadow-2xl  flex justify-center items-center">
+        <div className=" p-2 basis-full md:basis-[70%] w-full h-full   rounded-xl shadow-2xl  flex justify-center items-center">
           <form
             action=""
             className="flex flex-col items-center  w-full  gap-3 "

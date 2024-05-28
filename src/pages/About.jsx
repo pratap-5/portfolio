@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import useAboutInfo from "../info/useAboutInfo";
 import Slider from "../components/Slider";
