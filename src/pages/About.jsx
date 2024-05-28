@@ -20,7 +20,7 @@ function About() {
           <h1 className="text-start  capitalize  text-3xl md:text-6xl font-semibold ">
             About Me
           </h1>
-          <p className="  hidden  md:flex mt-2 text-blue-600 text-justify font-mono font-semibold w-full f-full">
+          <p className="  font-roboto hidden  md:flex mt-2 text-blue-600 text-justify  font-semibold w-full f-full">
             As a motivated and aspiring Java developer, I possess a solid
             foundation in core Java concepts and am proficient in leveraging
             industry-standard tools and practices to deliver high-quality

@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div
-      className={`relative  w-full h-full ${color} bg-[url("../src/images/bg2.jpg")] bg-cover bg-no-repeat bg-center bg-fixed  `}
+      className={`relative   w-full h-full ${color} bg-[url("../src/images/bg2.jpg")] bg-cover bg-no-repeat bg-center bg-fixed  `}
     >
       <Header />
       <Routes>

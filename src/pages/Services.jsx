@@ -66,7 +66,7 @@ function Services() {
         </div>
 
         <div className=" basis-[40%] xl:basis-[30%]   w-full  h-full  flex justify-center  items-center gap-1  ">
-          <span className="   p-3 overflow-hidden  w-full h-full text-center  shadow-lg shadow-black  tracking-wide    font-semibold rounded-lg ">
+          <span className="   p-3 overflow-hidden  w-full h-full text-center  shadow-lg shadow-black  tracking-wide  rounded-lg ">
             <a
               href={selectedService?.link || ""}
               target="_blank"
@@ -76,12 +76,13 @@ function Services() {
               {selectedService?.link  || "link not available"}<FaExternalLinkAlt />
 
             </a>
-            <h1 className="md:text-3xl  text-[red] mt-1">
+            <h1 className="md:text-3xl  text-[red] mt-1 font-semibold font-serif">
               {selectedService?.projectName || "project name not available"}
             </h1>
-            <h2 className="text-justify  h-[200px] md:h-full overflow-auto mt-3">
+            <div className="divider"></div>
+            <p className="text-justify  h-[200px] md:h-full overflow-auto mt-3 font-roboto">
               {selectedService?.details || "Details not availavle"}
-            </h2>
+            </p>
           </span>
         </div>
       </div>
