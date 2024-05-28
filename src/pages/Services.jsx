@@ -29,7 +29,7 @@ function Services() {
         children[currentIndex].click(); // Click the current child element
         if (currentIndex === children.indexOf(children[currentIndex])) {
           children[currentIndex].style.transform = "scale(1.3)";
-          children[currentIndex].style.zIndex = "5";
+          children[currentIndex].style.zIndex = "1";
         }
 
         setCurrentIndex((prevIndex) => (prevIndex + 1) % children.length); // Move to the next index and loop back to the start

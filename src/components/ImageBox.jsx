@@ -12,7 +12,7 @@ function ImageBox({ setSelectedService, service }) {
       }}
     >
       <figure className="basis-[70%] w-full h-full p-3">
-        <img
+        <img   
           className="w-full h-full rounded-lg "
           src={service.imageLink}
           alt="Movie"

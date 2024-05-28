@@ -19,9 +19,9 @@ function Header() {
         <progress className="progress w-56 "></progress>
       </span>
       <ul
-        className={`  transition z-20 duration-500 sm:flex sm:justify-center sm:items-center gap-5 text-2xl capitalize ${
+        className={`  transition duration-500 sm:flex sm:justify-center sm:items-center gap-5 text-2xl capitalize ${
           menu
-            ? `flex flex-col absolute items-center  bg-gray-400 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-0 justify-start  left-0 top-0 h-screen w-1/2 p-4`
+            ? `flex flex-col absolute items-center z-20 bg-gray-900 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-70 justify-start  left-0 top-0 h-screen w-1/2 p-4`
             : "hidden"
         }`}
       >

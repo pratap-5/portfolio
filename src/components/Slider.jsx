@@ -8,7 +8,7 @@ function Slider({ info }) {
   const [childWidth, setChildWidth] = useState();
   const [curInd, setCurInd] = useState(0);
 
-  const bgColor=darkMode?"bg-slate-800":"bg-slate-200"
+  const bgColor = darkMode ? "bg-slate-800" : "bg-slate-200";
 
   useEffect(() => {
     if (scrollRef.current && scrollRef.current.firstChild) {
@@ -20,7 +20,6 @@ function Slider({ info }) {
     const scrollInterval = setTimeout(() => {
       if (scrollRef.current) {
         const { scrollWidth, clientWidth, scrollLeft } = scrollRef.current;
-
 
         if (scrollWidth - clientWidth >= clientWidth + scrollLeft) {
           let i = curInd;
@@ -35,7 +34,7 @@ function Slider({ info }) {
     }, delay);
 
     return () => clearTimeout(scrollInterval);
-  }, [curInd,scrollRef]);
+  }, [curInd, scrollRef]);
 
   return (
     <div>
@@ -47,7 +46,7 @@ function Slider({ info }) {
         {info.map((data, ind) => {
           return (
             <div
-              className={`min-w-full mt-5 border border-slate-300  rounded-2xl p-2   bg-gray-400 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-0 `}
+              className={`  min-w-full mt-5 border border-slate-300  rounded-2xl p-2   bg-gray-400 bg-clip-padding backdrop-filter  backdrop-blur-lg bg-opacity-0 `}
               key={ind}
             >
               <h2 className=" text-center md:text-start  capitalize text-3xl font-semibold ">
@@ -60,7 +59,6 @@ function Slider({ info }) {
                     <div key={ind}>
                       <h2 className=" text-blue-600  text capitalize text-xl font-bold">
                         {key}
-                        {" :"}
                       </h2>
                       <p className="font-semibold mb-4"> {data.details[key]}</p>
                     </div>
